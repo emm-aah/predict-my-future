@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Montserrat&display=swap');
+
+body {
+    width: 100vw;
+    height: 110vh;
+    background: url(../images/pexels-mohan-reddy-4388593.jpg) no-repeat center/cover;
+    object-position: bottom;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.outer-box {
+    height: 80%;
+    width: 80%;
+    background-color: rgba(216, 191, 216, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    color: white;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.question-area {
+    background-color: rgba(28, 6, 58, 0.9)
+}
