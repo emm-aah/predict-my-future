@@ -2,11 +2,11 @@
 
 body {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background: url(../images/pexels-mohan-reddy-4388593.jpg) no-repeat center/cover;
     object-position: bottom;
     font-family: 'Montserrat', sans-serif;
-    color:aliceblue
+    color: white;
 }
 
 .outer-box {
@@ -15,12 +15,6 @@ body {
     background-color: rgba(216, 191, 216, 0.3);
     margin-left: auto;
     margin-right: auto;
-}
-
-.heading 
-.question {
-    font-family: 'Cinzel', sans-serif;
-    text-align: center;
 }
 
 .heading {
@@ -44,8 +38,20 @@ body {
     margin-left: auto;
 }
 
+.color-answers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .color-option {
     height:70px;
     width:70px;
+    margin: 20px;
+   
 
+}]
+
+.next-question {
+    display: flex;
 }
