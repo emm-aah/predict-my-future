@@ -24,6 +24,7 @@ body {
 
 }
 
+
 .question {
     font-size: 1.5rem;
     font-family: 'Cinzel', sans-serif;
@@ -45,13 +46,26 @@ body {
 }
 
 .color-option {
-    height:70px;
-    width:70px;
+    height:25vw;
+    width:25vw;
     margin: 20px;
+    max-height: 150px;
+    max-width: 150px;
    
 
-}]
+}
 
 .next-question {
     display: flex;
+    justify-content: center;
+}
+
+.next-btn {
+    margin-top: 35px;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(28, 6, 58);
+    color: white;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 90%;
 }
