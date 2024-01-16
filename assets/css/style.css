@@ -28,7 +28,7 @@ body {
     justify-content: space-evenly;
 }
 
-.question {
+#question {
     font-size: 1.5rem;
     font-family: 'Cinzel', sans-serif;
     text-align: center;

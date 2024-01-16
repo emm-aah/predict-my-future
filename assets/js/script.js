@@ -1,26 +1,28 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
 
-        button.addEventListener("click", function () {
-            let chosenAnswer = this.getId;
+        button.addEventListener("click", function() {
+            let chosenAnswer = this.getAttribute("id")
             if (this.getAttribute("data-type") === "answer") {
-                chooseAnswer(chosenAnswer);
+                document.getElementById("question").innerText = `You picked ${chosenAnswer}!`;
             } else {
-               alert (`Unknown`)
+                alert(`You need to chose an answer`);
             }
         });
     }
+    
 });
-
+/** 
 function chooseAnswer(chosenAnswer){
      document.getElementById(reveal-answer).innerText = `You have picked ${chosenAnswer}`
     }
 
 function submitAnswer(chosenAnswer){
      if (chosenAnswer === "blue") {
-        incremenentPredicitonOne();
+        incremenentPredictionOne();
      }
 }
 function nextQuestion()
@@ -30,4 +32,4 @@ function incrementPredictionOne() {
 }
 function incrementPredictionTwo()
 function incrementPredictionThree()
-function incrementPredictionFour()
+function incrementPredictionFour() **/
