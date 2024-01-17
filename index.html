@@ -19,10 +19,11 @@
     <div class="outer-box">
         <h1 class="heading">Predict My Future</h1>
         <div class="personal-info">
-        <p>Name:<input type="text"></p>
-        <p>Age:<input type="number"></p>
+        <label>Name:</label><input type="text"></p>
+        <label>Age:</label><input type="number"></p>
         </div>
-        <div class="question-area">
+        <div class="question-area" id="question-area">
+            <div id = "color-question">
             <h3 id="question">Pick a colour</h3>
             <div class="color-answers">
             <button class="btn answer-button blue" id="blue" data-type="answer" ></button>
@@ -30,11 +31,12 @@
             <button class="btn answer-button turquoise" id="turquoise" data-type="answer"></button>
             <button class="btn answer-button pink" id="pink" data-type="answer"></button>
             </div>
+            </div>
         </div>
-        <p class="reveal-answer"></p>
+        <div class="reveal-answer"></div>
         <div class="next-question"><button class="btn next-btn" data-type="submit">Next Question</button></div>
     </div>
-    <p hidden><span id="predict-one">0</span><span id="predict-two">0</span><span id="predict-three">0</span><span id="predict-four">0</span></p>
+    <p><span id="predict-one">0</span><span id="predict-two">0</span><span id="predict-three">0</span><span id="predict-four">0</span></p>
      
     <script src="assets/js/script.js"></script>
 </body>
