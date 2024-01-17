@@ -3,7 +3,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: url(../images/pexels-mohan-reddy-4388593.jpg) no-repeat center/cover;
+    background: url(../images/pexels-james-wheeler-1487009.jpg) no-repeat center/cover;
     object-position: bottom;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -79,6 +79,19 @@ input {
 
 .pink {
     background-color: pink;
+}
+
+.pizza {
+    background: url(/assets/images/pexels-horizon-content-3915857.jpg) no-repeat center/cover;
+}
+.sushi {
+    background: url(/assets/images/pexels-rajesh-tp-2098085.jpg) no-repeat center/cover;
+}
+.roast {
+    background: url(/assets/images/pexels-engin-akyurt-2673353.jpg) no-repeat center/cover;
+}
+.curry {
+    background: url(/assets/images/pexels-alberta-studios-10508208.jpg) no-repeat center/cover;
 }
 
 .next-question {
