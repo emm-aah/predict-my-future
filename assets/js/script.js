@@ -33,17 +33,17 @@ function nextQuestion() {
     
     let questionArea = document.getElementById("question-area");
     let firstChild = questionArea.children[0];
-    /**let outerBox = getElementById('outer-box');*/
+    let outerBox = document.getElementById('outer-box');
 
     if (firstChild.getAttribute("id") === "color-question") {
             questionArea.innerHTML = `
             <div id="food-question">
             <h3 id="question">Pick a food</h3>
             <div class="color-answers">
-            <button class="btn answer-button pizza" id="pizza" data-type="answer" >Pasta</button>
-            <button class="btn answer-button sushi" id="sushi" data-type="answer">Sushi</button>
-            <button class="btn answer-button roast" id="roast" data-type="answer">Roast</button>
-            <button class="btn answer-button curry" id="curry" data-type="answer">Curry</button>
+            <button class="btn answer-button pizza" id="pizza" data-type="answer" ></button>
+            <button class="btn answer-button sushi" id="sushi" data-type="answer"></button>
+            <button class="btn answer-button roast" id="roast" data-type="answer"></button>
+            <button class="btn answer-button curry" id="curry" data-type="answer"></button>
             </div>
             </div>`;
     
