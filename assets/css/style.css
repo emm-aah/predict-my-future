@@ -67,7 +67,7 @@ input {
 }
 
 .blue {
-    background-color: lightblue;
+    background-color: blue;
 }
 
 .orange {
@@ -75,7 +75,7 @@ input {
 }
 
 .turquoise {
-    background-color: aquamarine;
+    background-color: green;
 }
 
 .pink {
@@ -95,12 +95,12 @@ input {
     background: url(/assets/images/pexels-alberta-studios-10508208.jpg) no-repeat center/cover;
 }
 
-.next-question {
+.submit {
     display: flex;
     justify-content: center;
 }
 
-.next-btn {
+.submit-btn {
     margin-top: 35px;
     height: 40px;
     width: 150px;
