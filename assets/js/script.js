@@ -1,14 +1,14 @@
-let question1 = {
+    
+let questions = [ 
+    {
         question: "Pick a Color",
         answers: [
-        {option: "Blue", value: "4"},
-        {option: "Green", value: "2"},
-        {option: "Orange", value: "1"},
-        {option: "Pink", value: "3"}
+            { option: "Blue", value: "4" },
+            { option: "Green", value: "2" },
+            { option: "Orange", value: "1" },
+            { option: "Pink", value: "3" }
         ]
-};
-     
-let questions = [ 
+    },
     {
         question: "Pick a Food",
         answers: [
@@ -39,35 +39,32 @@ let questions = [
     },
 ]
 
+let currentQuestion = 0
 
 
 document.addEventListener("DOMContentLoaded", function () {
-
-    document.getElementById("question").innerText = question1.question;
-    document.getElementById("a").innerText = question1.answers[0].option;
-    document.getElementById("b").innerText = question1.answers[1].option;
-    document.getElementById("c").innerText = question1.answers[2].option;
-    document.getElementById("d").innerText = question1.answers[3].option;
+    document.getElementById("question").innerText = questions[currentQuestion].question;
+    document.getElementById("a").innerText = questions[currentQuestion].answers[0].option;
+    document.getElementById("b").innerText = questions[currentQuestion].answers[1].option;
+    document.getElementById("c").innerText = questions[currentQuestion].answers[2].option;
+    document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 
     let nextBtn = document.getElementById("next");
-    nextBtn.addEventListener("click", nextQuestion)
+    let submitBtn = document.getElementById("submit");
+    nextBtn.addEventListener("click", nextQuestion);
+    submitBtn.addEventListener("click", submitAnswer)
 
 
 });
 
-function nextQuestion() {
- let question = document.getElementById("question");
- let optionA = document.getElementById("a");
- let optionB = document.getElementById("b");
- let optionC = document.getElementById("c");
- let optionD = document.getElementById("d");
- let currentQuestion = 0
-    for(let i = 0; i<3; i++) {
-        question.innerText = questions[i].question;
-        optionA.innerText = questions[i].answers[0].option;
-        optionB.innerText = questions[i].answers[1].option;
-        optionC.innerText = questions[i].answers[2].option;
-        optionD.innerText = questions[i].answers[3].option;
-    }
+function submitAnswer() {
+    currentQuestion = currentQuestion + 1
+}
 
+function nextQuestion() {
+    document.getElementById("question").innerText = questions[currentQuestion].question;
+    document.getElementById("a").innerText = questions[currentQuestion].answers[0].option;
+    document.getElementById("b").innerText = questions[currentQuestion].answers[1].option;
+    document.getElementById("c").innerText = questions[currentQuestion].answers[2].option;
+    document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 }
