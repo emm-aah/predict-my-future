@@ -9,7 +9,6 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="assets/favicon_io/site.webmanifest">
     
 
     
@@ -18,67 +17,23 @@
 <body class="background">
     <div class="outer-box" id="outer-box">
         <h1 class="heading">Predict My Future</h1>
-        <div class="personal-info">
-        <label>Name:</label><input type="text"></p>
-        <label>Age:</label><input type="number"></p>
         </div>
         <div class="question-area" id="question-area">
             <div id = "color-question">
-            <h3 id="question">Pick a colour</h3>
-            <div class="color-answers">
-            <button class="btn answer-button" id="blue" alt="blue" data-type="answer" ></button>
-            <button class="btn answer-button" id="orange" alt="orange" data-type="answer"></button>
-            <button class="btn answer-button" id="turquoise" alt="green" data-type="answer"></button>
-            <button class="btn answer-button" id="pink" alt="pink" data-type="answer"></button>
+            <h3 id="question"></h3>
+            <div id="answers">
+                <input type="radio" name="color-option" id="option-a"><label for="option-a" id="a"></label>
+                <input type="radio" name="color-option" id="option-b"><label for="option-b" id="b"></label>
+                <input type="radio" name="color-option" id="option-c"><label for="option-c" id="c"></label>
+                <input type="radio" name="color-option" id="option-d"><label for="option-d" id="d"></label>
+    
             </div>
-            <div class="submit"><button class="btn submit-btn" data-type="submit">Submit</button></div>
             </div>
-            <div id="food-question">
-                <h3 id="question">Pick a food</h3>
-                <div class="color-answers">
-                    <button class="btn answer-button" id="pizza" alt="pizza" data-type="answer"></button>
-                    <button class="btn answer-button" id="sushi" alt="sushi" data-type="answer"></button>
-                    <button class="btn answer-button" id="roast" alt="roast" data-type="answer"></button>
-                    <button class="btn answer-button" id="curry" alt="curry" data-type="answer"></button>
-                </div>
-                <div class="submit"><button class="btn submit-btn" data-type="submit">Submit</button></div>
-            </div>`
-            <div id="sport-question">
-                <h3 id="question">Pick a sport</h3>
-                <div class="color-answers">
-                    <button class="btn answer-button" id="soccer" data-type="answer"></button>
-                    <button class="btn answer-button" id="tennis" data-type="answer"></button>
-                    <button class="btn answer-button" id="frisbee" data-type="answer"></button>
-                    <button class="btn answer-button" id="basketball" data-type="answer"></button>
-                </div>
-                <div class="submit"><button class="btn submit-btn" data-type="submit">Submit</button></div>
+            <div class="bottom-btns"><button class="btn submit-btn" id="submit">Submit</button></div>
+            <div class="bottom-btns"><button class= "btn next-btn" id="next">Next Question</button></div>
+            <div class="bottom-btns"><button class="btn predict btn" id="predict">Predict</button>
             </div>
-            <div id="car-question">
-                <h3 id="question">Pick a Media</h3>
-                <div class="color-answers">
-                    <button class="btn answer-button" id="games" data-type="answer">Games</button>
-                    <button class="btn answer-button" id="tv-show" data-type="answer">Tv Show</button>
-                    <button class="btn answer-button" id="movie" data-type="answer">Movie</button>
-                    <button class="btn answer-button" id="book" data-type="answer">book</button>
-                </div>
-                <div class="submit"><button class="btn submit-btn" data-type="submit">Submit</button></div>
-            </div>
-            <div id="car-question">
-                <h3 id="question">Pick a Card</h3>
-                <div class="color-answers">
-                    <button class="btn answer-button" id="jack" data-type="answer">Jack</button>
-                    <button class="btn answer-button" id="queen" data-type="answer">Queen</button>
-                    <button class="btn answer-button" id="king" data-type="answer">King</button>
-                    <button class="btn answer-button" id="ace" data-type="answer">Ace</button>
-                </div>
-                <div class="submit"><button class="btn submit-btn" data-type="submit">Submit</button></div>
-            </div>
-
-        </div>
-        <div class="submit"><button src= "prediciton.html" class="btn predict" data-type="predict">Predict My Futuree!</button></div>
-    </div>
-    <p><span id="predict-one">0</span><span id="predict-two">0</span><span id="predict-three">0</span><span id="predict-four">0</span></p>
-     </section>
+       
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -32,6 +32,8 @@
 input {
     width: 25vw;
 }
+
+/** Question Area**/
 #question {
     padding-top: 20px;
     font-size: 1.5rem;
@@ -47,7 +49,7 @@ input {
     margin-left: auto;
 }
 
-.color-answers {
+#answers {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -55,52 +57,17 @@ input {
 
 
 
-.answer-button {
-    height:25vw;
-    width:25vw;
-    margin: 20px;
-    max-height: 150px;
-    max-width: 150px;
-    color: white;
-    font-size: 90%;
-    box-shadow: white;
-}
 
-.blue {
-    background-color: blue;
-}
 
-.orange {
-    background-color: orange;
-}
 
-.turquoise {
-    background-color: green;
-}
+/** Submit Buttons **/
 
-.pink {
-    background-color: pink;
-}
-
-.pizza {
-    background: url(/assets/images/pexels-horizon-content-3915857.jpg) no-repeat center/cover;
-}
-.sushi {
-    background: url(/assets/images/pexels-rajesh-tp-2098085.jpg) no-repeat center/cover;
-}
-.roast {
-    background: url(/assets/images/pexels-engin-akyurt-2673353.jpg) no-repeat center/cover;
-}
-.curry {
-    background: url(/assets/images/pexels-alberta-studios-10508208.jpg) no-repeat center/cover;
-}
-
-.submit {
+.bottom-btn {
     display: flex;
     justify-content: center;
 }
 
-.submit-btn {
+.btn {
     margin-top: 35px;
     height: 40px;
     width: 150px;
@@ -108,4 +75,10 @@ input {
     color: white;
     font-family: 'Cinzel', sans-serif;
     font-size: 90%;
+}
+
+/** Prediction Page **/
+
+.prediction-background { 
+    background: url(/assets/images/crystal-ball-4043805_1280.jpg);
 }
