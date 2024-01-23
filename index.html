@@ -14,26 +14,23 @@
     
     <title>Predict My Future</title>
 </head>
-<body class="background">
+<body class="background" id="page">
     <div class="outer-box" id="outer-box">
         <h1 class="heading">Predict My Future</h1>
-        </div>
         <div class="question-area" id="question-area">
             <div id = "color-question">
             <h3 id="question"></h3>
             <div id="answers">
-                <input type="radio" name="color-option" id="option-a"><label for="option-a" id="a"></label>
-                <input type="radio" name="color-option" id="option-b"><label for="option-b" id="b"></label>
-                <input type="radio" name="color-option" id="option-c"><label for="option-c" id="c"></label>
-                <input type="radio" name="color-option" id="option-d"><label for="option-d" id="d"></label>
-    
+                <input type="radio" name="answer-option" id="option-a"><label for="option-a" id="a"></label>
+                <input type="radio" name="answer-option" id="option-b"><label for="option-b" id="b"></label>
+                <input type="radio" name="answer-option" id="option-c"><label for="option-c" id="c"></label>
+                <input type="radio" name="answer-option" id="option-d"><label for="option-d" id="d"></label>
             </div>
-            </div>
-            <div class="bottom-btns"><button class="btn submit-btn" id="submit">Submit</button></div>
+        </div>
             <div class="bottom-btns"><button class= "btn next-btn" id="next">Next Question</button></div>
-            <div class="bottom-btns"><button class="btn predict btn" id="predict">Predict</button>
-            </div>
-       
+            <div class="bottom-btns"><button class="btn predict btn hide" id="predict">Predict</button>
+        </div>
+     </div>  
     <script src="assets/js/script.js"></script>
 </body>
 </html>
