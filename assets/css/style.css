@@ -92,5 +92,16 @@ body {
 /** Prediction Page **/
 
 .prediction-background { 
-    background: url(/assets/images/crystal-ball-4043805_1280.jpg);
+    background: url(/assets/images/crystal-ball-4043805_1280.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+#prediction {
+    background:rgba(28, 6, 58, 0.7);
+    height: 50vw;
+    width: 50vw;
+    max-height: 200px;
+    max-width:200px;
+    border-radius: 50%;
 }

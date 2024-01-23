@@ -117,10 +117,11 @@ function nextQuestion() {
 }
 
 function changePage() {
- document.getElementbyId("page").innerHTML =
+
+ document.getElementById("page").innerHTML =
   `<section class='prediction-background'>
         <div id = inside-ball>
-            <p></p>
+            <p id="prediction"></p>
         </div>
 
     </section>`;
