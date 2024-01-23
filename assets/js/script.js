@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         submitAnswer();
         nextQuestion();
     });
-    predictBtn.addEventListener("click", changePage);      
+    predictBtn.addEventListener("click", predict)    
 
 
 
@@ -116,15 +116,19 @@ function nextQuestion() {
     document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 }
 
-function changePage() {
 
- document.getElementById("page").innerHTML =
-  `<section class='prediction-background'>
-        <div id = inside-ball>
-            <p id="prediction"></p>
-        </div>
-
-    </section>`;
-
-
+function predict() {
+    location.replace("prediciton.html")
+    let prediction = document.getElementById("predict");
+    if (predictionScore >= 24) {
+        predicition.innerText = "Prediction One";
+    } else if (predictionScore < 24 && predictionScore >= 20) {
+        predicition.innerText = "Prediction Two"
+    } else if (predictionScore < 20 && predictionScore >= 16) {
+        predicition.innerText = "Prediction Three";
+    } else if (predictionScore < 16 && predictionScore >= 12) {
+        predicition.innerText = "Prediction Four";
+    } else if (predictionScore < 12 && predictionScore >= 8) {
+        predicition.innerText = "Prediction Five";
+    }
 }
