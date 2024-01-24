@@ -137,6 +137,6 @@ function predict() {
 
 
 function incrementQuestion() {
-        questionNumber = currentquestion + 1;
+        questionNumber = currentQuestion + 1;
         document.getElementById("q-number").innerHTML = `${questionNumber}`;
 }

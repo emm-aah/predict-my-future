@@ -15,7 +15,10 @@ body {
 }
 
 .outer-box {
-    height: 90vh;
+    top: 5vh;
+    position:relative;
+    margin-top: auto;
+    height: 80vh;
     width: 90vw;
     background-color: rgba(90, 34, 139, 0.3);
     margin-left: auto;
@@ -24,7 +27,7 @@ body {
 }
 
 .heading {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 2rem;
     font-family: 'Cinzel decorative', sans-serif;
     text-align: center;
@@ -33,14 +36,14 @@ body {
 
 /** Question Area**/
 #question {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 1.5rem;
     text-align: center;
 }
 
 .question-area {
     background-color: rgba(0, 0, 0, 0.5);
-    height: 75vh;
+    height: 50vh;
     width: 85vw;
     margin-right: auto;
     margin-left: auto;
@@ -59,7 +62,6 @@ body {
 #answers label {
     border: 2px double #ffff;
     font-size: 100%;
-    margin: 15px;
     display:flex;
     justify-content: center;
     padding-top: 5vh;
@@ -67,6 +69,7 @@ body {
     width: 25vw;
     max-width:150px;
     min-width: 100px;
+    margin: 10px;
 }
 
 #answers label:hover {
@@ -85,8 +88,9 @@ body {
 
 #current-question {
     position: absolute;
-    bottom: 30px;
-    left: 30px;
+    bottom: 2px;
+    left: 10px;
+    font-size: 80%
 }
 
 
@@ -100,13 +104,13 @@ body {
 
 
 .btn {
-    margin-top: 35px;
-    height: 40px;
-    width: 150px;
-    background-color: rgba(28, 6, 58, 0.5);
+    background-color: rgba(28, 6, 58, 0.8);
     color: white;
     font-family: 'Cinzel', sans-serif;
     font-size: 90%;
+    height: 40px;
+    width: 100px;
+    margin-top: 15px;
 }
 
 
@@ -119,7 +123,7 @@ body {
     width: 100vw;
 }
 
-#prediction {
+.prediction {
     background:rgba(28, 6, 58, 0.3);
     height: 85vw;
     width: 85vw;
@@ -130,6 +134,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #your-future {
@@ -156,6 +161,10 @@ body {
     .outer-box {
         margin: 10px;
     }
+
+    .question-area {
+        height: 50vh;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -165,12 +174,25 @@ body {
     }
 
     .question-area {
-        padding-top: 10vh;
+        padding-top: 5vh;
         height: 50vh;
     }
 
     #answers label {
         padding: 8vh 0;
         width: 300px;
+    }
+
+    .btn {
+        height: 70px;
+        width: 200px;
+        font-size: larger;
+    }
+
+    
+
+    #current-question {
+        left: 20px;
+        bottom: 10px;
     }
 }
