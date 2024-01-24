@@ -84,10 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextQuestion();
         incrementQuestion();
     });
-    predictBtn.addEventListener("click", function(){
-        predict();
-        showPrediction();
-    });
+    predictBtn.addEventListener("click", predict);
 
 });
 
@@ -99,7 +96,9 @@ function submitAnswer() {
         if (choices[i].checked) {
             choiceValue = parseInt(questions[currentQuestion].answers[i].value);
             predictionScore = predictionScore + choiceValue;
-        } 
+        } else if (choices.length === 0) {
+            alert `Please choose one!`
+        }
     }
     
 }
@@ -118,23 +117,21 @@ function nextQuestion() {
 
 
 function predict() {
+    location.replace("prediciton.html");
     let future = document.getElementById("your-future");
     if (predictionScore >= 24) {
-        future.innerHTML = "Prediction One";
-    } else if (predictionScore < 24 && predictionScore >= 20) {
-        future.innerHTML = "Prediction Two";
-    } else if (predictionScore < 20 && predictionScore >= 16) {
-        future.innerHTML = "Prediction Three";
-    } else if (predictionScore < 16 && predictionScore >= 12) {
-        future.innerHTML = "Prediction Four";
-    } else if (predictionScore < 12 && predictionScore >= 8) {
-        future.innerHTML = "Prediction Five";
+        future.textContent = "Prediction One";
+    } else if (predictionScore >= 20) {
+        future.textContent = "Prediction Two";
+    } else if (predictionScore >= 16) {
+        future.textContent = "Prediction Three";
+    } else if (predictionScore >= 12) {
+        future.textContent = "Prediction Four";
+    } else if (predictionScore >=8) {
+        future.textContent = "Prediction Five";
     }
 }
 
-function showPrediction (){
-    location.replace("prediciton.html")
-}
 
 
 function incrementQuestion() {

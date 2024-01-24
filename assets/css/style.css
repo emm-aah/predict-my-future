@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Montserrat&display=swap');
 
 body {
-    height: fit-content;
+    height: 100vh;
     margin: 0;
     font-family: 'Cinzel', sans-serif;
     color: white;
 }
 
 .background {
-    width: 100vw;
-    height: fit-content;
+    height: 100vh;
     background: url(../images/pexels-james-wheeler-1487009.jpg) no-repeat center/cover;
     object-position: bottom;
 }
@@ -74,12 +73,18 @@ body {
     cursor: pointer;
 }
 
-#answers label:checked {
+input:checked {
     text-decoration: underline;
 }
 
 .hide {
     display:none;
+}
+
+#current-question {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
 
 
@@ -143,7 +148,11 @@ body {
 @media screen and (max-width: 300px) {
     #answers label {
         font-size: 80%;
-        width: 20vw;
+        width: 30px;
+        margin: 8px;
+    }
+    .outer-box {
+        margin: 10px;
     }
 }
 
