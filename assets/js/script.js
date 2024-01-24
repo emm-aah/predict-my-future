@@ -104,6 +104,7 @@ function submitAnswer() {
 }
 
 function nextQuestion() {
+    currentQuestion = currentQuestion + 1;
     if (currentQuestion >= 6) {
         document.getElementById("next").classList.add('hide');
         document.getElementById("predict").classList.remove('hide');
@@ -117,7 +118,8 @@ function nextQuestion() {
 
 
 function predict() {
-    location.replace("prediciton.html");
+    document.getElementById("predict-page").classList.remove('hide');
+    document.getElementById("page").classList.add('hide')
     let future = document.getElementById("your-future");
     if (predictionScore >= 24) {
         future.textContent = "Prediction One";
@@ -135,7 +137,6 @@ function predict() {
 
 
 function incrementQuestion() {
-        currentQuestion = currentQuestion + 1;
-        let oldQuestion = parseInt(document.getElementById("q-number"));
-        document.getElementById("q-number").innerHTML = oldQuestion++;
+        questionNumber = currentquestion + 1;
+        document.getElementById("q-number").innerHTML = `${questionNumber}`;
 }

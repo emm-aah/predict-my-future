@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Montserrat&display=swap');
 
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     font-family: 'Cinzel', sans-serif;
     color: white;
@@ -10,7 +10,8 @@ body {
 .background {
     height: 100vh;
     background: url(../images/pexels-james-wheeler-1487009.jpg) no-repeat center/cover;
-    object-position: bottom;
+    top: 0px;
+    left: 0px;
 }
 
 .outer-box {
@@ -19,7 +20,7 @@ body {
     background-color: rgba(90, 34, 139, 0.3);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    padding-top: 25px;
 }
 
 .heading {
@@ -40,7 +41,7 @@ body {
 .question-area {
     background-color: rgba(0, 0, 0, 0.5);
     height: 75vh;
-    width: 90vw;
+    width: 85vw;
     margin-right: auto;
     margin-left: auto;
 }
@@ -73,8 +74,9 @@ body {
     cursor: pointer;
 }
 
-input:checked {
-    text-decoration: underline;
+.answered {
+    background-color: #ffff;
+    color:rgb(28, 6, 58)
 }
 
 .hide {
@@ -149,7 +151,7 @@ input:checked {
     #answers label {
         font-size: 80%;
         width: 30px;
-        margin: 8px;
+        margin: 5px;
     }
     .outer-box {
         margin: 10px;
@@ -164,6 +166,7 @@ input:checked {
 
     .question-area {
         padding-top: 10vh;
+        height: 50vh;
     }
 
     #answers label {
