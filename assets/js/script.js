@@ -78,15 +78,16 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 
     let nextBtn = document.getElementById("next");
-    let submitBtn = document.getElementById("submit");
-    let predictBtn = document.getElementById("predict")
+    let predictBtn = document.getElementById("predict");
     nextBtn.addEventListener("click", function(){
         submitAnswer();
         nextQuestion();
+        incrementQuestion();
     });
-    predictBtn.addEventListener("click", predict)    
-
-
+    predictBtn.addEventListener("click", function(){
+        predict();
+        showPrediction();
+    });
 
 });
 
@@ -98,7 +99,6 @@ function submitAnswer() {
         if (choices[i].checked) {
             choiceValue = parseInt(questions[currentQuestion].answers[i].value);
             predictionScore = predictionScore + choiceValue;
-            currentQuestion = currentQuestion + 1
         } 
     }
     
@@ -118,17 +118,27 @@ function nextQuestion() {
 
 
 function predict() {
-    location.replace("prediciton.html")
-    let prediction = document.getElementById("predict");
+    let future = document.getElementById("your-future");
     if (predictionScore >= 24) {
-        predicition.innerText = "Prediction One";
+        future.innerHTML = "Prediction One";
     } else if (predictionScore < 24 && predictionScore >= 20) {
-        predicition.innerText = "Prediction Two"
+        future.innerHTML = "Prediction Two";
     } else if (predictionScore < 20 && predictionScore >= 16) {
-        predicition.innerText = "Prediction Three";
+        future.innerHTML = "Prediction Three";
     } else if (predictionScore < 16 && predictionScore >= 12) {
-        predicition.innerText = "Prediction Four";
+        future.innerHTML = "Prediction Four";
     } else if (predictionScore < 12 && predictionScore >= 8) {
-        predicition.innerText = "Prediction Five";
+        future.innerHTML = "Prediction Five";
     }
+}
+
+function showPrediction (){
+    location.replace("prediciton.html")
+}
+
+
+function incrementQuestion() {
+        currentQuestion = currentQuestion + 1;
+        let oldQuestion = parseInt(document.getElementById("q-number"));
+        document.getElementById("q-number").innerHTML = oldQuestion++;
 }
