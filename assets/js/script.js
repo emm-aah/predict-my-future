@@ -81,8 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let radioBtns = document.getElementsByClassName("answer-label");
     for (let radioBtn of radioBtns) {
-        radioBtn.addEventListener("click", chooseAnswer);
+        radioBtn.addEventListener("click", chooseAnswer)
     }
+       
     let nextBtn = document.getElementById("next");
     let predictBtn = document.getElementById("predict");
     nextBtn.addEventListener("click", function(){
@@ -112,7 +113,7 @@ function submitAnswer() {
         if (choices[i].checked) {
             choiceValue = parseInt(questions[currentQuestion].answers[i].value);
             predictionScore = predictionScore + choiceValue;
-        } else if (choices.checked === null) {
+        } else if (choices.checked == false) {
             alert `Please choose one!`;
         }
     }
