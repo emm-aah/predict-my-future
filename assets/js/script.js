@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let radioBtns = document.getElementsByClassName("answer-label");
     for (let radioBtn of radioBtns) {
         radioBtn.addEventListener("click", chooseAnswer)
-    }
+    };
        
     let nextBtn = document.getElementById("next");
     let predictBtn = document.getElementById("predict");
@@ -113,12 +113,11 @@ function submitAnswer() {
         if (choices[i].checked) {
             choiceValue = parseInt(questions[currentQuestion].answers[i].value);
             predictionScore = predictionScore + choiceValue;
-        } else if (choices.checked == false) {
-            alert `Please choose one!`;
-        }
+        }  
     }
-    
 }
+    
+    
 
 function nextQuestion() {
     currentQuestion = currentQuestion + 1;
@@ -136,8 +135,9 @@ function nextQuestion() {
 function clearAnswer() {
     let choices = document.getElementsByName("answer-option");
     for (let choice of choices) {
-        if (choice.checked)
+        if (choice.checked) {
             choice.checked = false;
+        }
         }
     }
 
