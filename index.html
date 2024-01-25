@@ -23,26 +23,28 @@
             <div id = "color-question">
             <h3 id="question"></h3>
             <div id="answers">
-                <input type="radio" name="answer-option" id="option-a"><label for="option-a" id="a"></label>
-                <input type="radio" name="answer-option" id="option-b"><label for="option-b" id="b"></label>
-                <input type="radio" name="answer-option" id="option-c"><label for="option-c" id="c"></label>
-                <input type="radio" name="answer-option" id="option-d"><label for="option-d" id="d"></label>
+                <input type="radio" name="answer-option" id="option-a"><label for="option-a" id="a" class="answer-label"></label>
+                <input type="radio" name="answer-option" id="option-b"><label for="option-b" id="b" class="answer-label"></label>
+                <input type="radio" name="answer-option" id="option-c"><label for="option-c" id="c" class="answer-label"></label>
+                <input type="radio" name="answer-option" id="option-d"><label for="option-d" id="d" class="answer-label"></label>
             </div>
         </div>
             <div class="bottom-btns next-btn"><button class= "btn" id="next">Next Question</button></div>
-            <div class="bottom-btns predict-btn"><button class="btn hide" id="predict">Predict My Future</button>
-        </div>
-    
-        <p id="current-question">Question <span id="q-number">1</span> of 7</p> 
-    <!-- Prediciton HTML --> 
+            <div class="bottom-btns predict-btn"><button class="btn hide" id="predict">Predict My Future</button></div>
+    </div>
+        <p id="current-question">Question <span id="q-number">1</span> of 7</p>
     </section>
+       
+    
+    <!-- Prediciton HTML --> 
+    
         <section class="prediction-background hide" id="predict-page">
-            
-            <p class= "prediction" id="your-future"> Your future is loading...</p>
-
+            <div class= "prediction" >
+            <p class = "prediction-text" id="your-future"> Your future is loading...</p>
+            <p class = "prediction-text" id="death-age">You will die at <span id="age">...</span></p> 
             </div>
         </section>
-     </div> 
+     
     <script src="assets/js/script.js"></script>
 
 </body>

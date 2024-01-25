@@ -1,4 +1,4 @@
-    
+/** Quiz Questions */    
 let questions = [ 
     {
         question: "Pick a Color",
@@ -66,6 +66,8 @@ let questions = [
     },
 ]
 
+/** Score Area */
+
 let currentQuestion = 0
 let predictionScore = 0
 
@@ -77,16 +79,30 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("c").innerText = questions[currentQuestion].answers[2].option;
     document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 
+    let radioBtns = document.getElementsByClassName("answer-label");
+    for (let radioBtn of radioBtns) {
+        radioBtn.addEventListener("click", chooseAnswer);
+    }
     let nextBtn = document.getElementById("next");
     let predictBtn = document.getElementById("predict");
     nextBtn.addEventListener("click", function(){
         submitAnswer();
         nextQuestion();
         incrementQuestion();
+        removeAnswered();
+        clearAnswer();
     });
-    predictBtn.addEventListener("click", predict);
+
+    predictBtn.addEventListener("click", function() {
+        predict();
+        deathAge();
+    });
 
 });
+
+function chooseAnswer() {
+    this.classList.add("answered");
+}
 
 function submitAnswer() {
     let choices = document.getElementsByName("answer-option");
@@ -96,8 +112,8 @@ function submitAnswer() {
         if (choices[i].checked) {
             choiceValue = parseInt(questions[currentQuestion].answers[i].value);
             predictionScore = predictionScore + choiceValue;
-        } else if (choices.length === 0) {
-            alert `Please choose one!`
+        } else if (choices.checked === null) {
+            alert `Please choose one!`;
         }
     }
     
@@ -116,27 +132,50 @@ function nextQuestion() {
     document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 }
 
+function clearAnswer() {
+    let choices = document.getElementsByName("answer-option");
+    for (let choice of choices) {
+        if (choice.checked)
+            choice.checked = false;
+        }
+    }
+
+function removeAnswered() {
+    let answers = document.getElementsByClassName("answered");
+    for (let answer of answers) {
+    answer.classList.remove("answered");
+    }    
+}
+
+
 
 function predict() {
     document.getElementById("predict-page").classList.remove('hide');
     document.getElementById("page").classList.add('hide')
     let future = document.getElementById("your-future");
     if (predictionScore >= 24) {
-        future.textContent = "Prediction One";
-    } else if (predictionScore >= 20) {
-        future.textContent = "Prediction Two";
+        future.textContent = "You will live in your hometown and have a family.";
+    } else if (predictionScore >= 19) {
+        future.textContent = "You will live in the countryside with a number of pets.";
     } else if (predictionScore >= 16) {
-        future.textContent = "Prediction Three";
+        future.textContent = "You will find great success in your career.";
     } else if (predictionScore >= 12) {
-        future.textContent = "Prediction Four";
+        future.textContent = "You will travel the world filling your life with adventure.";
     } else if (predictionScore >=8) {
-        future.textContent = "Prediction Five";
+        future.textContent = "You will live by the beach and be happily married";
+    } else {
+        future.textContent = "You will live in a city abroad and start your own company.";
     }
 }
 
-
-
 function incrementQuestion() {
-        questionNumber = currentQuestion + 1;
-        document.getElementById("q-number").innerHTML = `${questionNumber}`;
+    questionNumber = currentQuestion + 1;
+    document.getElementById("q-number").innerHTML = `${questionNumber}`;
 }
+
+function deathAge() {
+    let age = Math.floor(Math.random() * 50) + 50;
+    document.getElementById("age").innerText = `${age}`
+}
+
+
