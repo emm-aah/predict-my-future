@@ -78,20 +78,23 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("b").innerText = questions[currentQuestion].answers[1].option;
     document.getElementById("c").innerText = questions[currentQuestion].answers[2].option;
     document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
-
-    let radioBtns = document.getElementsByClassName("answer-label");
-    for (let radioBtn of radioBtns) {
-        radioBtn.addEventListener("click", chooseAnswer)
-    };
        
     let nextBtn = document.getElementById("next");
     let predictBtn = document.getElementById("predict");
+    let startBtn = document.getElementById("start");
+
+    startBtn.addEventListener("click", start)
+
+    let radioBtns = document.getElementsByClassName("answer-label");
+    for (let radioBtn of radioBtns) {
+        radioBtn.addEventListener("click", chooseAnswer);
+    }
+
     nextBtn.addEventListener("click", function(){
         submitAnswer();
         nextQuestion();
         incrementQuestion();
         removeAnswered();
-        clearAnswer();
     });
 
     predictBtn.addEventListener("click", function() {
@@ -101,14 +104,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function start() {
+    document.getElementById("start-page").classList.add("hide")
+    document.getElementById("question-area").classList.remove("hide")
+}
+
 function chooseAnswer() {
     this.classList.add("answered");
+    let options= document.getElementsByClassName("answer-option");
+    for (let option of options) {
+        option.classList.add("disable")
+    }
+   
 }
 
 function submitAnswer() {
     let choices = document.getElementsByName("answer-option");
-    let choiceValue;
-
     for (let i = 0; i < choices.length; i++){
         if (choices[i].checked) {
             choiceValue = parseInt(questions[currentQuestion].answers[i].value);
@@ -116,7 +127,7 @@ function submitAnswer() {
         }  
     }
 }
-    
+   
     
 
 function nextQuestion() {
@@ -132,14 +143,6 @@ function nextQuestion() {
     document.getElementById("d").innerText = questions[currentQuestion].answers[3].option;
 }
 
-function clearAnswer() {
-    let choices = document.getElementsByName("answer-option");
-    for (let choice of choices) {
-        if (choice.checked) {
-            choice.checked = false;
-        }
-        }
-    }
 
 function removeAnswered() {
     let answers = document.getElementsByClassName("answered");
@@ -147,8 +150,6 @@ function removeAnswered() {
     answer.classList.remove("answered");
     }    
 }
-
-
 
 function predict() {
     document.getElementById("predict-page").classList.remove('hide');
@@ -168,7 +169,6 @@ function predict() {
         future.textContent = "You will live in a city abroad and start your own company.";
     }
 }
-
 function incrementQuestion() {
     questionNumber = currentQuestion + 1;
     document.getElementById("q-number").innerHTML = `${questionNumber}`;
@@ -176,7 +176,6 @@ function incrementQuestion() {
 
 function deathAge() {
     let age = Math.floor(Math.random() * 50) + 50;
-    document.getElementById("age").innerText = `${age}`
+    document.getElementById("age").innerText = `${age}`;
 }
-
 

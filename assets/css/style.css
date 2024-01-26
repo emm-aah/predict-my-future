@@ -18,9 +18,9 @@ body {
     top: 5vh;
     position:relative;
     margin-top: auto;
-    height: 80vh;
+    height: 85vh;
     width: 90vw;
-    background-color: rgba(90, 34, 139, 0.3);
+    background-color: rgba(28, 6, 58, 0.5);
     margin-left: auto;
     margin-right: auto;
     padding-top: 25px;
@@ -31,23 +31,22 @@ body {
     font-size: 2rem;
     font-family: 'Cinzel decorative', sans-serif;
     text-align: center;
+}
 
+.start-btn {
+    margin-top: 30vw;
+}
+
+.instructions {
+    text-align: center;
 }
 
 /** Question Area**/
 #question {
-    padding-top: 10px;
     font-size: 1.5rem;
     text-align: center;
 }
 
-.question-area {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 50vh;
-    width: 85vw;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 #answers {
     display: flex;
@@ -79,11 +78,15 @@ body {
 
 .answered {
     transform: scale(1.2);
-    background-color:rgb(28, 6, 58);
+    background-color:rgba(0, 0, 0, 0.8);
 }
 
 .hide {
     display:none;
+}
+
+.disable {
+    pointer-events: none;
 }
 
 #current-question {
@@ -97,13 +100,17 @@ body {
 
 /** Submit Buttons **/
 
-.next-btn, .predict-btn {
+.next-btn, .predict-btn, .start-btn {
     display: flex;
     justify-content: center;
 }
 
+.btn:hover {
+    cursor:pointer;
+}
 
 .btn {
+    
     background-color: rgba(28, 6, 58, 0.8);
     color: white;
     font-family: 'Cinzel', sans-serif;
@@ -132,7 +139,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
