@@ -165,7 +165,7 @@ function submitAnswer() {
     let choices = document.getElementsByName("answer-option");
     for (let i = 0; i < choices.length; i++){
         if (choices[i].checked) {
-            choiceValue = parseInt(questions[currentQuestion].answers[i].value);
+            let choiceValue = questions[currentQuestion].answers[i].value;
             predictionScore = predictionScore + choiceValue;
         }  
     }
@@ -221,7 +221,7 @@ function predict() {
  * user is on
  */
 function incrementQuestion() {
-    questionNumber = currentQuestion + 1;
+    let questionNumber = currentQuestion + 1;
     document.getElementById("q-number").innerHTML = `${questionNumber}`;
 }
 
