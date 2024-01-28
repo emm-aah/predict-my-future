@@ -17,7 +17,7 @@ body {
 
 .outer-box {
     top: 5vh;
-    position:relative;
+    position: relative;
     margin-top: auto;
     height: 85vh;
     width: 90vw;
@@ -36,12 +36,12 @@ body {
 
 
 .start-btn {
-    margin-top: 8vw;
+    margin-top: 12vh;
 }
 
 .instructions {
     text-align: center;
-    margin-top: 8vw;
+    margin-top: 12vh;
     font-size: 90%;
     padding: 3vw;
 }
@@ -68,12 +68,12 @@ body {
 #answers label {
     border: 2px double #ffff;
     font-size: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
     width: 25vw;
-    max-width:150px;
+    max-width: 150px;
     min-width: 100px;
     margin: 10px;
 }
@@ -85,38 +85,36 @@ body {
 
 .answered {
     transform: scale(1.2);
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .hide {
-    display:none;
+    display: none;
 }
 
 .disable {
     pointer-events: none;
 }
 
-#current-question {
-    padding-left: 2vw;
-    font-size: 80%;
-}
 
 
 
 /** Submit Buttons **/
 
-.next-btn, .predict-btn, .start-btn {
+.next-btn,
+.predict-btn,
+.start-btn, .begin {
     display: flex;
     justify-content: center;
 }
 
 .btn:hover {
-    cursor:pointer;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn {
-    
+
     background-color: rgba(28, 6, 58, 0.8);
     color: white;
     font-family: 'Cinzel', sans-serif;
@@ -125,29 +123,34 @@ body {
     width: 120px;
     margin-top: 15px;
 }
+
 #current-question {
     font-size: 80%;
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+
 }
 
-.begin-again {
+#begin-again {
+    margin-top: 3vh;
+    background-color: rgba(28, 6, 58, 0.8);
+    height: 40px;
+    width: 40px; 
     font-size: 80%;
+    color: white;
 }
-.begin-again.hover {
-    text-decoration: underline;
+
+#begin-again:hover {
+    background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
 }
-
-.bottom-info {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 
 
 /** Prediction Page **/
 
-.prediction-background { 
+.prediction-background {
     background: url(../images/monique-pongan-ItzbIyqj6X4-unsplash.jpg) no-repeat center/cover;
     height: 100vh;
     width: 100vw;
@@ -170,14 +173,26 @@ body {
 }
 
 .prediction-text {
-        color: rgb(28, 6, 58);
-        padding-top: 5px;
-        width: 40vw;
-        max-width: 400px;
-        font-size: 85%;
-        padding-left: 5vw;
-        margin-top: 8px;
-    }
+    color: rgb(28, 6, 58);
+    padding-top: 5px;
+    width: 40vw;
+    max-width: 400px;
+    font-size: 85%;
+    padding-left: 5vw;
+    margin-top: 8px;
+}
+
+#redo {
+    background-color: black;
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#redo:hover {
+    background-color: rgba(28, 6, 58, 0.8);
+}
 
 
 /** Responsive CSS for smaller screens **/
@@ -188,6 +203,7 @@ body {
         width: 30px;
         margin: 5px;
     }
+
     .outer-box {
         margin: 10px;
     }
@@ -197,9 +213,10 @@ body {
     }
 
     .prediction {
-        height:65vw;
+        height: 65vw;
         width: 65vw;
     }
+
     .prediction-text {
         padding-left: 10vw;
         font-size: 80%;
@@ -217,16 +234,15 @@ body {
     #answers label {
         margin: 20px;
     }
-    
+
     .btn {
         height: 70px;
         width: 200px;
         font-size: larger;
     }
 
-
     .prediction-text {
-    font-size: 110%;
+        font-size: 110%;
     }
 }
 
@@ -247,10 +263,6 @@ body {
         width: 300px;
     }
 
-    #current-question {
-        left: 20px;
-        bottom: 10px;
-    }
 
     .prediction-text {
         padding-left: 50px;
