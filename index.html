@@ -20,7 +20,8 @@
     <div class="outer-box" id="outer-box">
         <h1 class="heading">Predict My Future</h1>
         <div class="start-page" id="start-page">
-        <p class = "instructions">Follow your instincts with this quiz to find your destiny!</p>
+        <p class = "instructions">Follow your instincts with this quiz to find your destiny!<br>Answer each question with your heart and move on to the next question.</p>
+        
         <div class = "start-btn">
         <button class="btn" id="start">Start Quiz</button>
         </div>
@@ -38,7 +39,10 @@
         
             <div class="bottom-btns next-btn"><button class= "btn" id="next">Next Question</button></div>
             <div class="bottom-btns predict-btn"><button class="btn hide" id="predict">Predict My Future</button></div>
+            <div class="bottom-info">
             <p id="current-question">Question <span id="q-number">1</span> of 7</p>
+            <p id="begin-again">Begin Again <i class="fa-solid fa-arrows-rotate"></i></p>
+            </div>
          </div>
         </div>
     </div>
@@ -51,9 +55,13 @@
             <p class = "prediction-text" id="your-future"> Your future is loading...</p>
             <p class = "prediction-text" id="death-age">You will die at <span id="age">...</span></p> 
             </div>
+
+            <p id="redo">Begin Again <i class="fa-solid fa-arrows-rotate"></i></p>
         </div>
+
      
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/814ab9f788.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

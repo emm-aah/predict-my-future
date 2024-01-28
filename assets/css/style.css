@@ -42,7 +42,11 @@ body {
 .instructions {
     text-align: center;
     margin-top: 8vw;
+    font-size: 90%;
+    padding: 3vw;
 }
+
+
 
 /** Question Area**/
 #question {
@@ -81,7 +85,7 @@ body {
 
 .answered {
     transform: scale(1.2);
-    background-color:rgba(0, 0, 0, 0.8);
+    background-color:rgba(0, 0, 0, 0.7);
 }
 
 .hide {
@@ -93,9 +97,7 @@ body {
 }
 
 #current-question {
-    position: absolute;
-    bottom: 2px;
-    left: 10px;
+    padding-left: 2vw;
     font-size: 80%;
 }
 
@@ -110,6 +112,7 @@ body {
 
 .btn:hover {
     cursor:pointer;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn {
@@ -122,6 +125,23 @@ body {
     width: 120px;
     margin-top: 15px;
 }
+#current-question {
+    font-size: 80%;
+}
+
+.begin-again {
+    font-size: 80%;
+}
+.begin-again.hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bottom-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
 
@@ -159,6 +179,7 @@ body {
         margin-top: 8px;
     }
 
+
 /** Responsive CSS for smaller screens **/
 
 @media screen and (max-width: 300px) {
@@ -188,6 +209,10 @@ body {
 /** Responsive CSS for larger screens **/
 
 @media screen and (min-width: 700px) {
+
+    .instructions {
+        font-size: 100%;
+    }
 
     #answers label {
         margin: 20px;

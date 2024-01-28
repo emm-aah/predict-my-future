@@ -67,8 +67,8 @@ const questions = [
 ];
 
 /** Score Area */
-const currentQuestion = 0;
-const predictionScore = 0;
+let currentQuestion = 0;
+let predictionScore = 0;
 
 
 
@@ -160,6 +160,13 @@ function removeAnswered() {
     }
 }
 
+function beginAgain() {
+    document.getElementById("question-area").classList.add('hide');
+    document.getElementById("start-page").classList.remove('hide');
+    currentQuestion = 0;
+    predictionScore = 0;
+}
+
 /** Makes prediction:
  * based on the score by answering questions
  */
@@ -218,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const nextBtn = document.getElementById("next");
     const predictBtn = document.getElementById("predict");
     const startBtn = document.getElementById("start");
+    const beginAgainBtn = document.getElementById("begin-again");
 
     startBtn.addEventListener("click", start);
 
@@ -235,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
             removeAnswered();
             removeDisable();
         } else {
-            alert`Please choose an answer`;
+            alert("Please choose an answer!");
         }
     });
 
@@ -244,4 +252,5 @@ document.addEventListener("DOMContentLoaded", function () {
         deathAge();
     });
 
+    beginAgainBtn.addEventListener("click", beginAgain)
 });
