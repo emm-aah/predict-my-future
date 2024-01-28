@@ -4,10 +4,30 @@ Predict my future is a quiz game based on gut instinct. The user will follow the
 
 These types of readings often give the user insight into themselves through an understanding of what future they would wish to have seen at the end and whether they are happy with their outcome. For example, a user might return the prediction “You will travel the world” and upon reading this realize that this is not what they wish for their life but in fact would have been happier to receive a future about having children.
 
+## Strategy
+
+The startegy was to make a user friendly quiz game which users could easily interact with based on feeling rather than knowledge and create a result from this.
+
+## Scope
+
+Some of the features that were looked at to implement this strategy:
+
+- Quiz questions/ instructions.
+- A quiz section that will change for the next question.
+- Next question button that becomes a predict my future button at the end.
+- Reference pictures for question answers
+- Prediciton are with a crystal ball to replicate seeing your future.
+-
+
+## Structure
+
+There are three distinct sections for this site. The first section will be the landing page with the instructions of how to play as well as a start button for when the user is ready. The second section will be the question area. This will hold the instruction and answer options. The first two will be linked by the same background and heading. The center of the box will be the only part to change when the game begins and continue to change for each question. The third section will change the view completely to a crystal ball with the prediciton inside of it.
+
+
 
 ## Features
 
-The quiz is split into three sections which each come in and out of view for the user using the css class of hide.
+The quiz is split into three sections which each come in and out of view for the user using the css class of hide. 
 
 ### Existing Features
 
