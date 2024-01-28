@@ -171,6 +171,7 @@ function beginAgain() {
     document.getElementById("start-page").classList.remove('hide');
     currentQuestion = 0;
     predictionScore = 0;
+    document.getElementById("q-number").innerHTML = 1;
 }
 
 

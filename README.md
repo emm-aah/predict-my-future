@@ -31,33 +31,49 @@ The features that got included where:
 - Start button to begin game
 - Predict my future button at end of last question
 - Next Question button to lead to the following question
-- 
+- Start over button
+- incrementing question at bottom of page
 
+## Surface 
+![Sky picture for quiz background](/assets/documentation/readme-images/sky-readme.jpg)
+![Crystal Ball for predicition background](/assets/documentation/readme-images/crystal-readme.jpg)
 ## Features
 
-The quiz is split into three sections which each come in and out of view for the user using the css class of hide. There are seven questions that need to be answered before 
+The quiz is split into three sections which each come in and out of view for the user using the css class of hide. There are seven questions that need to be answered before.
 
 ### Existing Features
 
-- __Logo__
+- _Logo_
 
-I found that Cinzel Decorative was the perfect font to reflect the image of fate and destiny.
+I found that Cinzel Decorative was the perfect font to reflect the image of fate and destiny. 
+![Logo](/assets/documentation/readme-images/logo.png)
 
-- __Landing Page__
+- _Landing Page_
 
 The background for the site is a starry night as the concept of stars aligning to form a path for your life is a commonly associated image.  There is a large purple box overlaying this image. This will contain all the elements throughout the quiz until the prediction page. There is a brief description of how to play and a start button for when the user is ready to begin.
 
-- __Question Area__
+- _Question Area_
 
-The question area appears when the quiz is started. It contains one instruction followed by for possible answers.
+The question area appears when the quiz is started. It contains one instruction followed by four possible answers. 
+![Question Area](/assets/documentation/readme-images/question-area.png)
 
-- __Next Question and Predict my Future buttons__
+- _Answer Buttons_
 
-- __Question Number__
+The buttons are spaced evenly on the page and are in boxes that zoom when hovered over and change color when chosen. The other answers then do not zoom when hovered over as they are disabled.
+![Chosen Answer](/assets/documentation/readme-images/answer-chosen.png)
 
-At the bottom of the box there is a tab on
+- _Start Button, Next Question and Predict my Future buttons_
 
-- __Prediction Page__
+These buttons apply the same styles. They change from purple to black when hovered over. They are prominent on the page and centered so the user is clear on how to continue.
+
+![Start Button](/assets/documentation/readme-images/start-btn.png)
+
+- _Question Number_
+
+At the bottom of the box there is a line that keeps track of what number question the user is on. 
+![Incrementing question](/assets/documentation/readme-images/incrementing-question.png)
+
+- _Prediction Page_
 
 ## Testing
 
@@ -84,10 +100,6 @@ The live link can be found here - <https://code-institute-org.github.io/love-run
 
 ## Credits
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-
-You can break the credits section up into Content and Media, depending on what you have included in your project.
-
 ### Content
 
 - The text for the Home page was taken from Wikipedia Article A
@@ -96,8 +108,8 @@ You can break the credits section up into Content and Media, depending on what y
 
 ### Media
 
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
+- The photo for the quiz was from pexels.com
+- The photo for the prediction was from upsplash.com
 
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
+
 
