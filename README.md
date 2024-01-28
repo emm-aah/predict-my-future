@@ -1,39 +1,75 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Predict My Future
 
-Welcome,
+Predict my future is a quiz game based on gut instinct. The user will follow their first instincts through a series of questions to find their destiny. Everyday users get daily horoscopes, palms, tarot cards etc read and this quiz is aimed at the user that would enjoy predictions based on a certain number of randomly selected answers to show them their fate. The quiz is meant to be enjoyable for the user and will offer different results if different answers are given on a second play.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+These types of readings often give the user insight into themselves through an understanding of what future they would wish to have seen at the end and whether they are happy with their outcome. For example, a user might return the prediction “You will travel the world” and upon reading this realize that this is not what they wish for their life but in fact would have been happier to receive a future about having children.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
 
-## Codeanywhere Reminders
+## Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The quiz is split into three sections which each come in and out of view for the user using the css class of hide.
 
-`python3 -m http.server`
+### Existing Features
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Logo__
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+I found that Cinzel Decorative was the perfect font to reflect the image of fate and destiny.
 
-`http_server`
+- __Landing Page__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The background for the site is a starry night as the concept of stars aligning to form a path for your life is a commonly associated image.  There is a large purple box overlaying this image. This will contain all the elements throughout the quiz until the prediction page. There is a brief description of how to play and a start button for when the user is ready to begin.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __Question Area__
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The question area appears when the quiz is started. It contains one instruction followed by for possible answers.
 
-To log into the Heroku toolbelt CLI:
+- __Next Question and Predict my Future buttons__
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __Question Number__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+At the bottom of the box there is a tab on
 
----
+- __Prediction Page__
 
-Happy coding!
+## Testing
+
+### Validator Testing
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator]
+  - No errors were found when passing through the official [(Jigsaw) validator]
+
+### Unfixed Bugs
+
+You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
+## Deployment
+
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - <https://code-institute-org.github.io/love-running-2.0/index.html>
+
+## Credits
+
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+
+You can break the credits section up into Content and Media, depending on what you have included in your project.
+
+### Content
+
+- The text for the Home page was taken from Wikipedia Article A
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+### Media
+
+- The photos used on the home and sign up page are from This Open Source site
+- The images used for the gallery page were taken from this other open source site
+
+Congratulations on completing your Readme, you have made another big stride in the direction of being a developer!
+

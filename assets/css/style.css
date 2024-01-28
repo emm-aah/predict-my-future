@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&family=Montserrat&display=swap');
 
+/** Landing Page **/
 body {
     height: 100%;
     margin: 0;
@@ -33,7 +34,6 @@ body {
     text-align: center;
 }
 
-/** Landing Page **/
 
 .start-btn {
     margin-top: 8vw;

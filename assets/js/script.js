@@ -64,13 +64,16 @@ let questions = [
             { option: "Pepsi", value: "4" }
         ]
     },
-]
+];
 
 /** Score Area */
 
-let currentQuestion = 0
-let predictionScore = 0
+let currentQuestion = 0;
+let predictionScore = 0;
 
+/**Event Listeners
+ * for when DOM content loaded
+ */
 
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("question").innerText = questions[currentQuestion].question;
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let predictBtn = document.getElementById("predict");
     let startBtn = document.getElementById("start");
 
-    startBtn.addEventListener("click", start)
+    startBtn.addEventListener("click", start);
 
     let radioBtns = document.getElementsByClassName("answer-label");
     for (let radioBtn of radioBtns) {
@@ -110,10 +113,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+/**Start Function
+ * hides the start area 
+ * reveals quiz area
+ */
+
 function start() {
-    document.getElementById("start-page").classList.add("hide")
-    document.getElementById("question-area").classList.remove("hide")
+    document.getElementById("start-page").classList.add("hide");
+    document.getElementById("question-area").classList.remove("hide");
 }
+
+/**Shows user which they have answered
+ * disables other buttons 
+ * takes first answer
+ */
 
 function chooseAnswer() {
     this.classList.add("answered");
@@ -132,6 +145,10 @@ if (answer.length > 0) {
 }
 }
 
+/**Removes disable
+ * for next question
+ */
+
 function removeDisable() {
     let choices = document.getElementsByClassName("answer-label");
     let i = 0;
@@ -141,6 +158,8 @@ function removeDisable() {
         }
 }
 
+/** Keeps track of 
+ * predicition score */
 
 function submitAnswer() {
     let choices = document.getElementsByName("answer-option");
@@ -175,9 +194,13 @@ function removeAnswered() {
     }    
 }
 
+/** Makes prediction
+ * based on the score received
+ */
+
 function predict() {
     document.getElementById("predict-page").classList.remove('hide');
-    document.getElementById("page").classList.add('hide')
+    document.getElementById("page").classList.add('hide');
     let future = document.getElementById("your-future");
     if (predictionScore >= 24) {
         future.textContent = "You will live in your hometown and have a family.";
@@ -193,11 +216,18 @@ function predict() {
         future.textContent = "You will live in a city abroad and start your own company.";
     }
 }
+
+/**Keeps tabs on what number question
+ * user is on
+ */
 function incrementQuestion() {
     questionNumber = currentQuestion + 1;
     document.getElementById("q-number").innerHTML = `${questionNumber}`;
 }
 
+/** Randomly creates number over 50 and under 100
+ * user will die
+ */
 function deathAge() {
     let age = Math.floor(Math.random() * 50) + 50;
     document.getElementById("age").innerText = `${age}`;
