@@ -91,10 +91,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     nextBtn.addEventListener("click", function(){
+        let answer = document.getElementsByClassName("answered");
+        if (answer.length > 0) {
         submitAnswer();
         nextQuestion();
         incrementQuestion();
         removeAnswered();
+        } else {
+            alert `Please choose an answer`;
+        }
     });
 
     predictBtn.addEventListener("click", function() {
