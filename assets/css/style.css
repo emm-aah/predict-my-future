@@ -34,11 +34,12 @@ body {
 }
 
 .start-btn {
-    margin-top: 30vw;
+    margin-top: 8vw;
 }
 
 .instructions {
     text-align: center;
+    margin-top: 8vw;
 }
 
 /** Question Area**/
@@ -139,7 +140,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    background-color: aqua;
 }
 
 .prediction-text {
@@ -164,6 +167,11 @@ body {
     .question-area {
         height: 50vh;
     }
+
+    .prediction {
+        height:65vw;
+        width: 65vw;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -177,6 +185,10 @@ body {
         width: 200px;
         font-size: larger;
     }
+}
+
+.prediction-text {
+    font-size: 110%;
 }
 
 

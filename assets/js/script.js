@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nextQuestion();
         incrementQuestion();
         removeAnswered();
+        removeDisable();
         } else {
             alert `Please choose an answer`;
         }
@@ -116,12 +117,30 @@ function start() {
 
 function chooseAnswer() {
     this.classList.add("answered");
-    let options= document.getElementsByClassName("answer-option");
-    for (let option of options) {
-        option.classList.add("disable")
+    disable();
     }
    
+function disable() {
+let answer = document.getElementsByClassName("answered");
+let choices = document.getElementsByClassName("answer-label");
+let i = 0;
+if (answer.length > 0) {
+    while (i < 4) {
+        choices[i].classList.add("disable");
+        i++;
+    }
 }
+}
+
+function removeDisable() {
+    let choices = document.getElementsByClassName("answer-label");
+    let i = 0;
+        while (i < 4) {
+            choices[i].classList.remove("disable");
+            i++;
+        }
+}
+
 
 function submitAnswer() {
     let choices = document.getElementsByName("answer-option");
