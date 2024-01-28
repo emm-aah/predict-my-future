@@ -161,9 +161,9 @@ function removeAnswered() {
 }
 
 /**
- * Begin Again and Retake
- * both clear questions answered before and take you back to the start
- * they hide and reveal the areas needed 
+ * Begin Again
+ * clear questions answered before and take you back to the start
+ * hide and reveal the areas needed 
  */
 
 function beginAgain() {
@@ -173,17 +173,6 @@ function beginAgain() {
     predictionScore = 0;
 }
 
-function retake() {
-    document.getElementById("predict-page").classList.add("hide");
-    document.getElementById("question-area").classList.add("hide");
-    document.getElementById("start-page").classList.remove('hide');
-    document.getElementById("page").classList.remove('hide');
-    document.getElementById("predict").classList.add("hide");
-    document.getElementById("next").classList.remove("hide");
-    currentQuestion = 0;
-    predictionScore = 0;
-    
-}
 
 /** Makes prediction:
  * based on the score by answering questions
@@ -272,5 +261,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     beginAgainBtn.addEventListener("click", beginAgain);
-    retakeQuiz.addEventListener("click", retake);
 });

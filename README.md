@@ -17,17 +17,25 @@ Some of the features that were looked at to implement this strategy:
 - Next question button that becomes a predict my future button at the end.
 - Reference pictures for question answers
 - Prediciton are with a crystal ball to replicate seeing your future.
--
+- Buttons to retake the test and to start again from the middle of the test.
 
 ## Structure
 
 There are three distinct sections for this site. The first section will be the landing page with the instructions of how to play as well as a start button for when the user is ready. The second section will be the question area. This will hold the instruction and answer options. The first two will be linked by the same background and heading. The center of the box will be the only part to change when the game begins and continue to change for each question. The third section will change the view completely to a crystal ball with the prediciton inside of it.
 
+## Skeleton
 
+The features that got included where:
+
+- Seven quiz questions with choice of four answers each
+- Start button to begin game
+- Predict my future button at end of last question
+- Next Question button to lead to the following question
+- 
 
 ## Features
 
-The quiz is split into three sections which each come in and out of view for the user using the css class of hide. 
+The quiz is split into three sections which each come in and out of view for the user using the css class of hide. There are seven questions that need to be answered before 
 
 ### Existing Features
 

@@ -10,7 +10,7 @@ body {
 
 .background {
     height: 100vh;
-    background: url(../images/pexels-james-wheeler-1487009.jpg) no-repeat center/cover;
+    background: url(../images/night-sky.jpg) no-repeat center/cover;
     top: 0px;
     left: 0px;
 }
@@ -151,7 +151,7 @@ body {
 /** Prediction Page **/
 
 .prediction-background {
-    background: url(../images/monique-pongan-ItzbIyqj6X4-unsplash.jpg) no-repeat center/cover;
+    background: url(../images/crystal-ball.jpg) no-repeat center/cover;
     height: 100vh;
     width: 100vw;
 }
@@ -182,17 +182,6 @@ body {
     margin-top: 8px;
 }
 
-#redo {
-    background-color: black;
-    width: 200px;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-
-#redo:hover {
-    background-color: rgba(28, 6, 58, 0.8);
-}
 
 
 /** Responsive CSS for smaller screens **/
