@@ -102,8 +102,9 @@ The live link can be found here - <https://code-institute-org.github.io/love-run
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- https://www.codingninjas.com/studio/library/how-to-create-a-javascript-quiz-code\
+- <https://www.altcademy.com/blog/how-to-make-a-quiz-in-javascript/>
+
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media

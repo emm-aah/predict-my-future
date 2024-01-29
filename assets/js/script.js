@@ -161,9 +161,9 @@ function removeAnswered() {
 }
 
 /**
- * Begin Again
- * clear questions answered before and take you back to the start
- * hide and reveal the areas needed 
+ * Begin Again and Retake
+ * both clear questions answered before and take you back to the start
+ * they hide and reveal the areas needed
  */
 
 function beginAgain() {
@@ -172,6 +172,21 @@ function beginAgain() {
     currentQuestion = 0;
     predictionScore = 0;
     document.getElementById("q-number").innerHTML = 1;
+}
+
+function retake() {
+    document.getElementById("predict-page").classList.add("hide");
+    document.getElementById("question-area").classList.add("hide");
+    document.getElementById("start-page").classList.remove('hide');
+    document.getElementById("page").classList.remove('hide');
+    document.getElementById("predict").classList.add("hide");
+    document.getElementById("next").classList.remove("hide");
+    currentQuestion = -1;
+    predictionScore = 0;
+    document.getElementById("q-number").innerHTML = 1;
+    removeAnswered();
+    nextQuestion();
+    removeDisable();
 }
 
 
@@ -262,4 +277,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     beginAgainBtn.addEventListener("click", beginAgain);
+    retakeQuiz.addEventListener("click", retake);
 });
