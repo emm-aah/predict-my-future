@@ -183,7 +183,7 @@ function retake() {
     document.getElementById("page").classList.remove('hide');
     document.getElementById("predict").classList.add("hide");
     document.getElementById("next").classList.remove("hide");
-    currentQuestion = -1;
+    currentQuestion = 0 - 1;
     predictionScore = 0;
     document.getElementById("q-number").innerHTML = 1;
     removeAnswered();
