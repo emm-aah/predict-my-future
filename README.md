@@ -4,6 +4,10 @@ Predict my future is a quiz game based on gut instinct. The user will follow the
 
 These types of readings often give the user insight into themselves through an understanding of what future they would wish to have seen at the end and whether they are happy with their outcome. For example, a user might return the prediction “You will travel the world” and upon reading this realize that this is not what they wish for their life but in fact would have been happier to receive a future about having children.
 
+![Responsive Design](/documentation/readme-images/responsiveness.png)
+
+The live quiz can be found here [Predict My Future](https://emm-aah.github.io/predict-my-future/)
+
 ## Strategy
 
 The strategy was to make a user-friendly quiz game which users could easily interact with based on feeling rather than knowledge and create a result from this.
@@ -36,13 +40,15 @@ The features that got included where:
 - Incrementing question at bottom of page
 - Retake quiz button
 
+Please find pdf to the Wireframe [here.](/documentation/wireframe-predict-my-future.pdf)
+
 ## Surface
 
 I decided that the night sky for the background image reflected the concept of prediction as people associate stars aligning with destiny and fate. I chose to put a purple hue overlay on top so that it brightened it and gave a feeling of fun rather than doom which can also be associated with these sorts of readings. This purple is transparent so the starry night effect is not lost.
 
-![Sky picture for quiz background](/assets/documentation/readme-images/sky-readme.jpg)
-![Crystal Ball for prediction background](/assets/documentation/readme-images/crystal-readme.jpg)
-![Purple Color](/assets/documentation/readme-images/color.png)
+![Sky picture for quiz background](/documentation/readme-images/sky-readme.jpg)
+![Crystal Ball for prediction background](/documentation/readme-images/crystal-readme.jpg)
+![Purple Color](/documentation/readme-images/color.png)
 
 ## Features
 
@@ -54,55 +60,55 @@ The quiz is split into three sections which each come in and out of view for the
 
 I found that Cinzel Decorative was the perfect font to reflect the image of fate and destiny.
 
-![Logo](/assets/documentation/readme-images/logo.png)
+![Logo](/documentation/readme-images/logo.png)
 
 - _Landing Page_
 
 The background for the site is a starry night as the concept of stars aligning to form a path for your life is a commonly associated image.  There is a large purple box overlaying this image. This will contain all the elements throughout the quiz until the prediction page. There is a brief description of how to play and a start button for when the user is ready to begin.
 
-![Landing Page](/assets/documentation/readme-images/landing-page.png)
+![Landing Page](/documentation/readme-images/landing-page.png)
 
 - _Question Area_
 
 The question area appears when the quiz is started. It contains one instruction followed by four possible answers.
 
-![Question Area](/assets/documentation/readme-images/question-area.png)
+![Question Area](/documentation/readme-images/question-area.png)
 
 - _Answer Buttons_
 
 The buttons are spaced evenly on the page and are in boxes that zoom when hovered over and change color when chosen. The other answers then do not zoom when hovered over as they are disabled.
 
-![Chosen Answer](/assets/documentation/readme-images/answer-chosen.png)
+![Chosen Answer](/documentation/readme-images/answer-chosen.png)
 
 - _Start Button, Next Question and Predict my Future buttons_
 
 These buttons apply the same styles. They change from purple to black when hovered over. They are prominent on the page and centered so the user is clear on how to continue.
 
-![Start Button](/assets/documentation/readme-images/start-btn.png)
+![Start Button](/documentation/readme-images/start-btn.png)
 
 - _Question Number_
 
 At the bottom of the box there is a line that keeps track of what number question the user is on.
 
-![Incrementing question](/assets/documentation/readme-images/incrementing-question.png)
+![Incrementing question](/documentation/readme-images/incrementing-question.png)
 
 - _Prediction Page_
 
 The prediction is given inside a crystal ball which is another symbol for seeing the future.
 
-![Prediction Page](/assets/documentation/readme-images/prediction-page.png)
+![Prediction Page](/documentation/readme-images/prediction-page.png)
 
 - _ReTake Quiz Button_
 
 A button was added to the prediction page to allow the user to retake the test if they are not happy with their results or just want to see what other outcomes would bring. It was made black and put down in the right hand corner so as not to take away from the prediction itself.
 
-![Retake button](/assets/documentation/readme-images/retake-quiz.png)
+![Retake button](/documentation/readme-images/retake-quiz.png)
 
 - _Age of Death_
 
 Math random was used to give a fun age of death- over 50 but less than 100 as part of the prediction.
 
-![Age of death prediction](/assets/documentation/readme-images/age-of-death.png)
+![Age of death prediction](/documentation/readme-images/age-of-death.png)
 
 ## Testing
 
@@ -121,10 +127,9 @@ I then sent the quiz to a selection of people to see if they could spot any bugs
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Femm-aah.github.io%2Fpredict-my-future%2F)
   - No errors were brought to light when passing through Jigsaw [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femm-aah.github.io%2Fpredict-my-future%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-  - Lighthouse results ![lighthouse](/assets/documentation/readme-images/lighthouse-results.png)
-  - No errors were found when put through JShint [JShint validator]
-  - The JShint metrics are:
-
+  - Lighthouse results ![lighthouse](/documentation/readme-images/lighthouse-results.png)
+  - No errors were found when put through JShint.
+  - The JShint metrics are: [JShint](/documentation/readme-images/JShint.png)
 
 ### Debugging
 
