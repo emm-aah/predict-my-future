@@ -42,6 +42,7 @@ I decided that the night sky for the background image reflected the concept of p
 
 ![Sky picture for quiz background](/assets/documentation/readme-images/sky-readme.jpg)
 ![Crystal Ball for prediction background](/assets/documentation/readme-images/crystal-readme.jpg)
+![Purple Color](/assets/documentation/readme-images/color.png)
 
 ## Features
 
@@ -51,21 +52,26 @@ The quiz is split into three sections which each come in and out of view for the
 
 - _Logo_
 
-I found that Cinzel Decorative was the perfect font to reflect the image of fate and destiny. 
+I found that Cinzel Decorative was the perfect font to reflect the image of fate and destiny.
+
 ![Logo](/assets/documentation/readme-images/logo.png)
 
 - _Landing Page_
 
 The background for the site is a starry night as the concept of stars aligning to form a path for your life is a commonly associated image.  There is a large purple box overlaying this image. This will contain all the elements throughout the quiz until the prediction page. There is a brief description of how to play and a start button for when the user is ready to begin.
 
+![Landing Page](/assets/documentation/readme-images/landing-page.png)
+
 - _Question Area_
 
-The question area appears when the quiz is started. It contains one instruction followed by four possible answers. 
+The question area appears when the quiz is started. It contains one instruction followed by four possible answers.
+
 ![Question Area](/assets/documentation/readme-images/question-area.png)
 
 - _Answer Buttons_
 
 The buttons are spaced evenly on the page and are in boxes that zoom when hovered over and change color when chosen. The other answers then do not zoom when hovered over as they are disabled.
+
 ![Chosen Answer](/assets/documentation/readme-images/answer-chosen.png)
 
 - _Start Button, Next Question and Predict my Future buttons_
@@ -76,20 +82,27 @@ These buttons apply the same styles. They change from purple to black when hover
 
 - _Question Number_
 
-At the bottom of the box there is a line that keeps track of what number question the user is on. 
+At the bottom of the box there is a line that keeps track of what number question the user is on.
+
 ![Incrementing question](/assets/documentation/readme-images/incrementing-question.png)
 
 - _Prediction Page_
 
 The prediction is given inside a crystal ball which is another symbol for seeing the future.
 
+![Prediction Page](/assets/documentation/readme-images/prediction-page.png)
+
 - _ReTake Quiz Button_
 
 A button was added to the prediction page to allow the user to retake the test if they are not happy with their results or just want to see what other outcomes would bring. It was made black and put down in the right hand corner so as not to take away from the prediction itself.
 
+![Retake button](/assets/documentation/readme-images/retake-quiz.png)
+
 - _Age of Death_
 
 Math random was used to give a fun age of death- over 50 but less than 100 as part of the prediction.
+
+![Age of death prediction](/assets/documentation/readme-images/age-of-death.png)
 
 ## Testing
 
@@ -106,16 +119,12 @@ I then sent the quiz to a selection of people to see if they could spot any bugs
 ### Validator Testing
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator]
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Femm-aah.github.io%2Fpredict-my-future%2F)
   - No errors were brought to light when passing through Jigsaw [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femm-aah.github.io%2Fpredict-my-future%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-  - Lighthouse results
+  - Lighthouse results ![lighthouse](/assets/documentation/readme-images/lighthouse-results.png)
   - No errors were found when put through JShint [JShint validator]
   - The JShint metrics are:
-        _Metrics_
-        _There are 15 functions in this file._
-        _Function with the largest signature take 0 arguments, while the median is 0._
-        _Largest function has 18 statements in it, while the median is 5._
-        _The most complex function has a cyclomatic complexity value of 6 while the median is 2._
+
 
 ### Debugging
 
