@@ -129,7 +129,7 @@ I then sent the quiz to a selection of people to see if they could spot any bugs
   - No errors were brought to light when passing through Jigsaw [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Femm-aah.github.io%2Fpredict-my-future%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   - Lighthouse results ![lighthouse](/documentation/readme-images/lighthouse-results.png)
   - No errors were found when put through JShint.
-  - The JShint metrics are: [JShint](/documentation/readme-images/JShint.png)
+  - The JShint metrics are: ![JShint](/documentation/readme-images/JShint.png)
 
 ### Debugging
 
