@@ -169,9 +169,11 @@ function removeAnswered() {
 function beginAgain() {
     document.getElementById("question-area").classList.add('hide');
     document.getElementById("start-page").classList.remove('hide');
-    currentQuestion = 0;
+    currentQuestion = -1;
     predictionScore = 0;
     document.getElementById("q-number").innerHTML = 1;
+    removeAnswered();
+    nextQuestion();
 }
 
 function retake() {
