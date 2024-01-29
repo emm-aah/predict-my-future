@@ -213,6 +213,12 @@ body {
         height: 50vh;
     }
 
+    #begin-again {
+        margin-top: 2vh;
+        height: 30px;
+        width:30px;
+    }
+
     .prediction {
         height: 65vw;
         width: 65vw;
